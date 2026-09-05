@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VALIANT 2K26 — National Level Technical Symposium</title>
+<meta name="description" content="VALIENT 2K26 — National Level Technical Symposium by the Department of Electronics & Communication Engineering, AAA College of Engineering and Technology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================= -->
+<!-- CINEMATIC INTRO                -->
+<!-- ============================= -->
+<div id="intro" class="intro">
+  <div class="intro-spark"></div>
+  <div class="intro-lines"></div>
+  <p class="intro-line" id="introLine1">IN A WORLD DRIVEN BY TECHNOLOGY&hellip;</p>
+  <p class="intro-line" id="introLine2">A NEW GENERATION OF HEROES WILL RISE.</p>
+  <h1 class="intro-title" id="introTitle">VALIANT <span>2K26</span></h1>
+  <p class="intro-line intro-final" id="introFinal">THE MISSION BEGINS.</p>
+  <button id="skipIntro" class="skip-btn">Skip Intro</button>
+</div>
+
+<!-- ============================= -->
+<!-- NAVIGATION                     -->
+<!-- ============================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo"><span class="nav-emblem"></span>VALIENT <em>2K26</em></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+
+      <div class="nav-dropdown">
+        <button class="nav-link nav-drop-btn" aria-expanded="false">Technical <svg class="chev" viewBox="0 0 12 8"><path d="M1 1l5 5 5-5"/></svg></button>
+        <div class="dropdown-panel" id="technicalPanel"></div>
+      </div>
+
+      <div class="nav-dropdown">
+        <button class="nav-link nav-drop-btn" aria-expanded="false">Non-Technical <svg class="chev" viewBox="0 0 12 8"><path d="M1 1l5 5 5-5"/></svg></button>
+        <div class="dropdown-panel" id="nonTechnicalPanel"></div>
+      </div>
+
+      <a href="#about" class="nav-link">About</a>
+      <a id="registerLinkNav" href="#" target="_blank" rel="noopener" class="nav-register">Register</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================= -->
+<!-- HERO                           -->
+<!-- ============================= -->
+<section id="home" class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-particles" id="heroParticles"></div>
+  <div class="hero-grain"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">ECE &middot; National Level Technical Symposium</p>
+    <h1 class="hero-title">VALIANT <span>2K26</span></h1>
+    <p class="hero-sub">The Next Generation of Innovators</p>
+    <p class="hero-sub2">ECE &times; Hollywood &times; Technology</p>
+    <p class="hero-tagline">&ldquo;Every hero has a mission.&rdquo;</p>
+    <p class="hero-fee-note">Registration Fee: <strong>&#8377;250</strong> &middot; Hackathon Entry: <strong>+&#8377;350</strong></p>
+
+    <div class="hero-actions">
+      <a href="#events" class="btn btn-ghost">Enter the Universe</a>
+      <a id="registerLinkHero" href="#" target="_blank" rel="noopener" class="btn btn-primary">Register Now</a>
+    </div>
+
+    <div class="countdown" id="countdown">
+      <p class="countdown-label">The mission begins in</p>
+      <div class="countdown-grid">
+        <div class="countdown-unit"><span id="cdDays">00</span><small>Days</small></div>
+        <div class="countdown-unit"><span id="cdHours">00</span><small>Hours</small></div>
+        <div class="countdown-unit"><span id="cdMins">00</span><small>Minutes</small></div>
+        <div class="countdown-unit"><span id="cdSecs">00</span><small>Seconds</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span></span></div>
+</section>
+
+<!-- ============================= -->
+<!-- ABOUT / ORIGIN STORY           -->
+<!-- ============================= -->
+<section id="about" class="origin">
+  <div class="origin-image">
+    <img id="aboutImg" src="" alt="VALIANT 2K26">
+    <div class="origin-frame"></div>
+  </div>
+  <div class="origin-text">
+    <p class="section-kicker">The Origin Story</p>
+    <blockquote>Every great universe begins with an idea.</blockquote>
+    <p>VALIANT is a technical symposium organized by the Department of Electronics &amp; Communication Engineering, bringing together students, innovators and technology enthusiasts to compete, create and collaborate.</p>
+    <p>Through technical challenges, creative competitions and futuristic experiences, VALIANT transforms ordinary participants into extraordinary innovators.</p>
+    <p class="origin-close">Your story starts here.</p>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- STATS                          -->
+<!-- ============================= -->
+<section class="stats">
+  <div class="stat"><span class="stat-num" data-target="500">0</span><small>Heroes</small></div>
+  <div class="stat"><span class="stat-num" data-target="10">0</span><small>Missions</small></div>
+  <div class="stat"><span class="stat-num" data-target="20">0</span><small>Colleges</small></div>
+  <div class="stat"><span class="stat-num" data-target="1">0</span><small>Ultimate Battle</small></div>
+</section>
+
+<!-- ============================= -->
+<!-- EVENTS / MISSIONS              -->
+<!-- ============================= -->
+<section id="events" class="missions">
+  <p class="section-kicker center">Choose Your Mission</p>
+  <h2 class="section-title center">Technical Missions</h2>
+  <div class="mission-grid" id="technicalGrid"></div>
+
+  <h2 class="section-title center non-tech-heading">Non-Technical Missions</h2>
+  <div class="mission-grid" id="nonTechnicalGrid"></div>
+</section>
+
+<!-- ============================= -->
+<!-- MISSION BRIEFING MODAL         -->
+<!-- ============================= -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <p class="modal-kicker">Mission Briefing</p>
+    <h3 class="modal-title" id="modalTitle"></h3>
+    <p class="modal-tagline" id="modalTagline"></p>
+    <p class="modal-desc" id="modalDesc"></p>
+    <p class="modal-rules" id="modalrules"></p>
+    <div class="modal-meta">
+      <div><span>Team Size</span><strong id="modalTeam"></strong></div>
+      <div><span>Coordinator 1</span><strong id="modalFee"></strong></div>
+      <div><span>Coordinator 2</span><strong id="modalVenue"></strong></div>
+     
+
+    </div>
+    <!--<a href="#" target="_blank" rel="noopener" class="btn btn-primary modal-cta" id="modalCta">Accept Mission &rarr;</a>-->
+  </div>
+</div>
+
+<!-- ============================= -->
+<!-- TIMELINE                       -->
+<!-- ============================= -->
+<section class="timeline-section">
+  <p class="section-kicker center">Mission Timeline</p>
+  <h2 class="section-title center">The Day Unfolds</h2>
+  <div class="timeline" id="timeline">
+    <div class="tl-item">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <p class="tl-act">Act I &mdash; The Arrival</p>
+        <p class="tl-time">09:00 AM</p>
+        <p class="tl-label">Registration</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <p class="tl-act">Act II &mdash; The Awakening</p>
+        <p class="tl-time">10:00 AM</p>
+        <p class="tl-label">Inauguration</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <p class="tl-act">Act III &mdash; The Battle</p>
+        <p class="tl-time">10:30 AM</p>
+        <p class="tl-label">Technical Events</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <p class="tl-act">Act IV &mdash; The Break</p>
+        <p class="tl-time">01:00 PM</p>
+        <p class="tl-label">Lunch</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <p class="tl-act">Act V &mdash; The Final Mission</p>
+        <p class="tl-time">02:00 PM</p>
+        <p class="tl-label">Non-Technical Events</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-marker"></div>
+      <div class="tl-content">
+        <p class="tl-act">Final Act &mdash; The Champions</p>
+        <p class="tl-time">04:30 PM</p>
+        <p class="tl-label">Prize Distribution</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- HACKATHON (separate event, after the symposium) -->
+<!-- ============================= -->
+<section id="hackathon" class="hackathon-cta">
+  <div class="hackathon-bg" id="hackathonBg"></div>
+  <div class="hackathon-overlay"></div>
+  <div class="hackathon-inner">
+    <p class="section-kicker center">A Separate Mission &middot; After the Symposium</p>
+    <h2 class="section-title center">ROBOFORGE National Level Technical Hackathon</h2>
+    <p class="hackathon-blurb" id="hackathonBlurb"></p>
+
+    <div class="hackathon-facts">
+      <div class="hackathon-fact"><span>Date</span><strong id="hackathonDate"></strong></div>
+      <div class="hackathon-fact"><span>Venue</span><strong id="hackathonVenue"></strong></div>
+      <div class="hackathon-fact"><span>Team Size</span><strong id="hackathonTeam"></strong></div>
+      <div class="hackathon-fact"><span>Entry Fee</span><strong id="hackathonFee"></strong></div>
+    </div>
+
+    <a id="hackathonLink" href="hackathon.html" target="_blank" rel="noopener" class="btn btn-primary btn-large">View Hackathon &rarr;</a>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- HERO GALLERY (scrolling)       -->
+<!-- Add your own hero/character images below in script.js (heroShowcase array). -->
+<!-- ============================= -->
+<section class="hero-showcase">
+  <p class="section-kicker center">The Universe</p>
+  <div class="hero-showcase-track" id="heroShowcaseTrack"></div>
+</section>
+
+<!-- ============================= -->
+<!-- HEADQUARTERS / CONTACT         -->
+<!-- ============================= -->
+<section class="hq">
+  <p class="section-kicker center">The Headquarters</p>
+  <h2 class="section-title center">AAA College of Engineering and Technology</h2>
+  <p class="hq-dept center">Department of Electronics &amp; Communication Engineering</p>
+
+  <div class="hq-grid">
+    <div class="hq-map">
+      <div class="hq-map-frame">
+        <div class="hq-map-grid"></div>
+        <div class="hq-map-pin"></div>
+        <a id="hqLocationLink" href="#" target="_blank" rel="noopener" class="btn btn-ghost hq-map-btn">View Location &rarr;</a>
+      </div>
+    </div>
+    <div class="hq-info">
+      <a id="hqEmail" href="mailto:" class="hq-row"><span>Email</span><strong>valient2k26@aaacet.edu.in</strong></a>
+      <a id="hqPhone" href="tel:" class="hq-row"><span>Phone</span><strong>+91 90000 00000</strong></a>
+      <a id="hqInstagram" href="#" target="_blank" rel="noopener" class="hq-row"><span>Instagram</span><strong>@valiant_2k_26</strong></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- FINAL CTA                      -->
+<!-- ============================= -->
+<section class="final-cta">
+  <div class="final-particles" id="finalParticles"></div>
+  <h2>Every hero needs a mission.</h2>
+  <h2 class="final-cta-em">What&rsquo;s yours?</h2>
+  <a id="registerLinkFinal" href="#" target="_blank" rel="noopener" class="btn btn-primary btn-large">Register for VALIENT 2K26 &rarr;</a>
+</section>
+
+</main>
+
+<!-- ============================= -->
+<!-- FOOTER                         -->
+<!-- ============================= -->
+<footer class="footer">
+  <p class="footer-logo">VALIANT <em>2K26</em></p>
+  <p class="footer-tag">ECE &times; Hollywood &times; Technology</p>
+  <p class="footer-quote">&ldquo;Every Hero Has a Mission.&rdquo;</p>
+  <a href="index.html" class="footer-home-link">&larr; Back to VALIANT 2K26 Home</a>
+  <div class="footer-socials">
+    <a id="footerInstagram" href="#" target="_blank" rel="noopener">Instagram</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 VALIENT 2K26. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
