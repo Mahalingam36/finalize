@@ -67,7 +67,7 @@ const eventImages = {
   codexQuiz: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",
   hrManager: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
   Animetocartoon: "spider.jpg",
-  nonTech2: "spotify.jpg",
+  nonTech2: "spo.jpg",
   nonTech3: "twist.jpg",
   hackathon: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop",
 };
